@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>${Title}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div ws-replace="Body"></div>
+    <div ws-hole="Hole1"></div>
+    <div ws-template="Template1">
+        <h1>This is the ${Name}</h1>
+        <p>Lorem ipsum</p>
+    </div>
+    <div ws-hole="Hole2"></div>
+    <div ws-children-template="Template2">
+        <h1>This is the ${Name}</h1>
+        <p>Lorem ipsum</p>
+    </div>
+
+    <h1>Typical list</h1>
+    <ul ws-hole="ListItems"></ul>
+    <div ws-template="ListItem">
+        <li>Item: ${ItemName}</li>
+    </div>
+
+    <h1>Various inputs</h1>
+    <p>These are different inputs</p>
+    <h2>Using HTML Templating</h2>
+    <div ws-replace="InputFields"></div>
+
+    <h2>Using Websharper HTML</h2>
+    <div ws-replace="InputFields2"></div>
+
+    <div ws-template="InputField">
+        <p>InputField template:</p>
+        <div>
+            <input type="text" ws-var="T1" placeholder="enter any text">
+        </div>
+        <div>
+            <input type="number" ws-var="N1">
+        </div>
+        <div>
+            <input type="date" ws-var="D1">
+        </div>
+        <label>
+            Phone number: 
+            <input type="tel" ws-var="Tel" placeholder="Phonenumber" />
+        </label>
+        <label>
+            Password:
+            <input type="password" ws-var="PW">
+        </label>
+        <label>
+            OnInput:
+            <input type="text" ws-oninput="OnInput" />
+        </label>
+        <label>
+            Checkbox:
+            <input type="checkbox" ws-var="Check" />
+        </label>
+        <div>
+            <p>Selections</p>
+            <label>
+                Selection:
+                <select ws-var="Color">
+                    <option>green</option>
+                    <option>blue</option>
+                    <option>yellow</option>
+                </select>
+            </label>
+            <label>
+                Primary Colors:
+                <select ws-var="PrimaryColor" ws-hole="PrimaryColorList">
+                </select>
+            </label>
+    
+        </div>
+        <label>
+            Checked integer:
+            <input type="number" ws-var="N2">
+        </label>
+        <label>
+            file Load:
+            <input type="file" ws-oninput="LoadFile">
+        </label>
+        <p>test</p>
+        <p>Text = ${T1}</p>   
+        <p>Number = ${N1}</p>
+        <p>Date = ${D1}</p>
+        <p>Phone = ${Tel}, Password = ${PW}</p> 
+        <p>Check = ${Check}, Color = ${Color}</p>
+    </div>
+
+    <footer>
+    </footer>
+    <script ws-replace="scripts"></script>
+  </body>
+</html>
+

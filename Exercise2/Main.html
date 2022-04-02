@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>${Title}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+    <style>
+        /* Sticky footer styles */
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+        body {
+            /* Margin bottom by footer height */
+            margin-bottom: 60px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            /* Set the fixed height of the footer here */
+            height: 60px;
+            background-color: #f5f5f5;
+        }
+        .container .text-muted {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>List of people</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Birthday</th>
+                </tr>
+            </thead>
+            <tbody ws-hole="TableRows"></tbody>
+            <div ws-template="TableRow">
+                <tr>
+                    <td>${First}</td>
+                    <td>${Last}</td>
+                    <td>${Birthday}</td>
+                </tr>
+            </div>
+        </table>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">
+                For an enhanced template that provides automatic GitHub deployment to Azure, fork from <a href="https://github.com/intellifactory/ClientServer.Azure">GitHub</a>, or
+                read more <a href="https://websharper.com/blog-entry/4368/deploying-websharper-apps-to-azure-via-github">here</a>.
+            </p>
+        </div>
+    </footer>
+    <script ws-replace="scripts"></script>
+</body>
+</html>
