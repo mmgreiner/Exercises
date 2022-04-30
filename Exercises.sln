@@ -9,6 +9,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Exercise2", "Exercise2\Exer
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ShoppingCart", "ShoppingCart\ShoppingCart.fsproj", "{FFAC9A88-9A82-4EC2-BDAB-2809CCA5C92E}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "WSList", "WSList\WSList.fsproj", "{1E804300-D1DB-49CC-97F1-322E60C13D89}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SpaList", "SpaList\SpaList.fsproj", "{CFBEB43B-E73C-4AF5-9DDC-DAA068409C15}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{FFAC9A88-9A82-4EC2-BDAB-2809CCA5C92E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFAC9A88-9A82-4EC2-BDAB-2809CCA5C92E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFAC9A88-9A82-4EC2-BDAB-2809CCA5C92E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E804300-D1DB-49CC-97F1-322E60C13D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E804300-D1DB-49CC-97F1-322E60C13D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E804300-D1DB-49CC-97F1-322E60C13D89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E804300-D1DB-49CC-97F1-322E60C13D89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFBEB43B-E73C-4AF5-9DDC-DAA068409C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFBEB43B-E73C-4AF5-9DDC-DAA068409C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFBEB43B-E73C-4AF5-9DDC-DAA068409C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFBEB43B-E73C-4AF5-9DDC-DAA068409C15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

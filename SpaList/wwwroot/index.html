@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SpaList</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Content/SpaList.css" />
+    <style>
+        /* Don't show the not-yet-loaded templates */
+        [ws-template], [ws-children-template] { display: none; }
+    </style>
+    <script type="text/javascript" src="Content/SpaList.head.js"></script>
+</head>
+<body>
+    <h1>My list of unique people</h1>
+    <div id="main" ws-children-template="Main">
+        <ul ws-hole="ListContainer">
+            <li ws-template="ListItem">${Name} / ${Birthday}</li>
+        </ul>
+        <div>
+            <input ws-var="Name" placeholder="Name" />
+            <input ws-var="Birthday" type="date" placeholder="Birthday" />
+            <button ws-onclick="Add">Add</button>
+            <div>You are about to add: ${Name} of ${Birthday}</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="Content/SpaList.min.js"></script>
+</body>
+</html>
